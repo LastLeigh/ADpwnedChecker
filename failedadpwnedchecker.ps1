@@ -1,4 +1,5 @@
-﻿get-aduser -filter * -Properties mail | select-object mail |
+# Passing null "" to inside the foreach loop on this version. 
+get-aduser -filter * -Properties mail | select-object mail |
  ForEach-Object { # Loop over each user object.
     $_.mail  # Grab the property
     $result = Get-PwnedAccount -emailaddress $_ # Set $result to the result of the PWNed api module command running each object in $_
