@@ -13,7 +13,7 @@
                     if ($PwnedAddress.name -ne $null) {
                         [PSCustomObject]@{
                             EmailAddress = $address
-                            BadGuy = $PwnedAddress.Name
+                            BreachEvent = $PwnedAddress.Name
                             BreachDate = $PwnedAddress.BreachDate
                             Verified = $PwnedAddress.IsVerified
                        }
