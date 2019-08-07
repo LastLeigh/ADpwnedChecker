@@ -24,3 +24,5 @@
             }
         }
 }
+
+Get-PWNedAccounts
